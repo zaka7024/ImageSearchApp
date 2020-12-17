@@ -10,7 +10,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.codinginflow.imagesearchapp"
+        applicationId "com.zaka7024.imagesearchapp"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
         versionCode 1
@@ -72,6 +72,9 @@ dependencies {
 
     // Paging 3
     implementation "androidx.paging:paging-runtime:$pagingVersion"
+
+    //PRDownloader
+    implementation "com.mindorks.android:prdownloader:$prdownloaderVersion"
 }
 
 kapt {

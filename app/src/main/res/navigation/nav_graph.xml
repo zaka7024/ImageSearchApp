@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/galleryFragment">
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.zaka7024.imagesearchapp.fragments.gallery.GalleryFragment"
+        android:label="Unsplash Gallery">
+        <action
+            android:id="@+id/action_galleryFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.zaka7024.imagesearchapp.fragments.details.DetailsFragment"
+        android:label="Photo"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="unsplash_photo"
+            app:argType="com.zaka7024.imagesearchapp.data.UnsplashPhoto" />
+    </fragment>
+</navigation>
